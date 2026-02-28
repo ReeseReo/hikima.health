@@ -7,7 +7,7 @@ import { useReducedMotion } from '@/hooks/useReducedMotion';
 function TrustValue({ value, numericValue, label, color, inView }: { value: string; numericValue: number | null; label: string; color: 'cyan' | 'violet'; inView: boolean }) {
   const reduce = useReducedMotion();
   const counted = useCountUp(numericValue ?? 0, numericValue === 100 ? 1500 : 1200, inView, reduce ?? false);
-  const text = numericValue === null ? (inView ? 'Wed' : '') : value.includes('%') ? `${counted}%` : `${counted}`;
+  const text = numericValue === null ? value : value.includes('%') ? `${counted}%` : `${counted}`;
   return (
     <div className="flex-1 text-center py-4 relative">
       <motion.div animate={value === '0' && inView ? { scale: [1, 1.03, 1] } : undefined} transition={{ duration: 1.2, repeat: Infinity }} className={`font-mono text-[30px] font-bold ${color === 'cyan' ? 'text-accent' : 'text-violet'}`}>{text}</motion.div>
