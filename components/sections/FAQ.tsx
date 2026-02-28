@@ -9,7 +9,8 @@ export function FAQ() {
       <div className="max-w-[1280px] mx-auto">
         <SectionLabel>FREQUENTLY ASKED</SectionLabel>
         <h2 className="font-sora text-3xl md:text-5xl mb-4">Questions before you start</h2>
-        <p className="text-text-2 mb-[52px]">If yours isn&apos;t here, email us at hello@hikima.health</p>
+        <p className="text-text-2 mb-3">If yours isn&apos;t here, email us at hello@hikima.health</p>
+        <p className="text-xs text-text-dim mb-[52px]">Security note: please do not send protected health information (PHI) by email.</p>
         <StaggerContainer className="grid xl:grid-cols-2 gap-4">
           {FAQS.map((f) => (
             <motion.article key={f.q} variants={fadeUp} className="bg-surface border border-border border-l-[3px] border-l-violet rounded-xl p-[26px] hover:border-l-accent hover:-translate-y-0.5 hover:shadow-lg transition-all">

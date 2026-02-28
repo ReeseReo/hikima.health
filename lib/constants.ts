@@ -88,6 +88,10 @@ export const FAQS = [
     a: "During onboarding, you complete a voice profile questionnaire — your tone, vocabulary preferences, and communication style. Every piece is written to match your specific voice, not a generic template.",
   },
   {
+    q: 'Do you need patient data or PHI to work with us?',
+    a: 'No. Hikima does not require protected health information (PHI) to deliver content services. Please do not send PHI by email. If a workflow ever requires PHI, we define a HIPAA-compliant process and required agreements before use.',
+  },
+  {
     q: 'What platforms do you support?',
     a: 'Blog content formatted for WordPress or any CMS. Social captions for Instagram, Facebook, and LinkedIn. Email templates for Mailchimp and ConvertKit. Patient handouts as branded PDFs.',
   },
