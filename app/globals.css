@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-dim:    rgba(34,211,238,0.08);
+  --accent-border: rgba(34,211,238,0.2);
+  --accent-glow:   rgba(34,211,238,0.15);
+  --violet-dim:    rgba(167,139,250,0.08);
+  --violet-border: rgba(167,139,250,0.2);
+  --violet-glow:   rgba(167,139,250,0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0C0D12;
+  color: #F4F4F5;
+}
+
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+
+@keyframes rotating-border {
+  0% { --angle: 0deg; }
+  100% { --angle: 360deg; }
+}
+
+.featured-rotating {
+  position: relative;
+}
+
+.featured-rotating::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 1rem;
+  padding: 1px;
+  background: conic-gradient(from var(--angle, 0deg), rgba(34,211,238,0.3), rgba(167,139,250,0.15), transparent, rgba(34,211,238,0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rotating-border 8s linear infinite;
+  pointer-events: none;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
