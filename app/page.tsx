@@ -2,6 +2,8 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { BuiltFor } from '@/components/sections/BuiltFor';
 import { TrustBar } from '@/components/sections/TrustBar';
+import { BestFor } from '@/components/sections/BestFor';
+import { ContentShowcase } from '@/components/sections/ContentShowcase';
 import { Divider } from '@/components/ui/Divider';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Proof } from '@/components/sections/Proof';
@@ -18,8 +20,10 @@ export default function Home() {
       <Hero />
       <BuiltFor />
       <TrustBar />
+      <BestFor />
       <Divider />
       <HowItWorks />
+      <ContentShowcase />
       <Divider />
       <Proof />
       <Pricing />
