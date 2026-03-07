@@ -71,6 +71,14 @@ export const FAQS = [
     a: "Every month, we research topics that matter to your patients. For each topic, we create a complete content set — a blog article, social posts, a newsletter, and more depending on your plan. Everything is built from one research brief, so your content is cohesive across channels.",
   },
   {
+    q: 'What do I actually get each month?',
+    a: "It depends on your plan. Starter gives you 2 blog articles, 8 social posts, and 2 newsletters per month. Growth doubles that to 4 articles, 16 social posts, 4 newsletters, plus 2 patient handouts. Authority gives you the most — 4 articles, 24 social posts, 4 newsletters, 4 handouts, video scripts, and image prompts. Every plan includes your brand voice setup, a content calendar, and compliance review.",
+  },
+  {
+    q: 'Which plan is right for me?',
+    a: "If you're just getting started with content or want to test the waters, Starter covers the essentials — blog + social + email, twice a month. Growth is for practices ready to show up consistently and start building authority with more content and patient handouts. Authority is for practices that want a full content engine — maximum output, strategy calls, publishing handled for you, and priority turnaround.",
+  },
+  {
     q: 'Can I see samples before signing up?',
     a: "Yes — visit DietDiscipline.com. Every piece of content on that site is produced by the same team and process that would serve your practice. We can also create a mini content pack in your specialty so you can see the quality firsthand.",
   },
