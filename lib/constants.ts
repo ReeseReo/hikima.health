@@ -151,7 +151,7 @@ export const STEPS = [
 
 export const PROOF_STATS = [
   { value: 'Weekly', label: 'Content published', color: 'cyan' as const },
-  { value: '5-Part', label: 'Evidence-based template', color: 'violet' as const },
+  { value: '1', label: 'Research brief per batch', color: 'violet' as const },
   { value: '0', label: 'Medical claims', color: 'violet' as const },
   { value: '100%', label: 'Actionable content', color: 'cyan' as const },
 ] as const;

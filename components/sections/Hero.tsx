@@ -16,7 +16,7 @@ export function Hero() {
         <motion.p {...item(0.4)} className="max-w-3xl mx-auto text-text-2 leading-relaxed mb-[52px]">You became a practitioner to help people, not to write blog posts. Hikima handles your content — evidence-based, compliance-reviewed, and branded to your practice. Delivered every week.</motion.p>
         <motion.div {...item(0.55)} className="flex flex-col sm:flex-row justify-center gap-4">
           <Button href="#pricing">Choose Your Plan</Button>
-          <Button href="#proof" variant="secondary">See Our Work Live →</Button>
+          <Button href="#proof" variant="secondary">See Our Work First →</Button>
         </motion.div>
       </div>
     </section>
