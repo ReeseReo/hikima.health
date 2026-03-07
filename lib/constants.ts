@@ -73,7 +73,7 @@ export const FAQS = [
   },
   {
     q: "What if I don't like the content?",
-    a: "Every delivery includes one round of revisions within 48 hours. Your brand voice profile ensures we get it right from Day 1. If we haven't heard from you in 48 hours, the delivery is approved and we move to next week's batch.",
+    a: "Every delivery includes one round of revisions within 48 hours. Your brand voice profile helps us get it right from Day 1. If we don't hear back within 48 hours, we move forward so your publishing schedule stays on track — and we apply your feedback in the next cycle.",
   },
   {
     q: 'How long is the commitment?',
@@ -110,7 +110,7 @@ export const TRUST_STATS = [
   { value: '7', numericValue: 7, label: 'Days to first delivery', color: 'cyan' as const },
   { value: 'Wed', numericValue: null, label: 'Recurring delivery day', color: 'violet' as const },
   { value: '100%', numericValue: 100, label: 'Compliance-reviewed', color: 'cyan' as const },
-  { value: '0', numericValue: 0, label: 'Medical claims. Ever.', color: 'violet' as const },
+  { value: '0', numericValue: 0, label: 'Medical claims published', color: 'violet' as const },
 ] as const;
 
 export const STEPS = [

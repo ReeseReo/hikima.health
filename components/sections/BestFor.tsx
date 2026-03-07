@@ -23,7 +23,7 @@ export function BestFor() {
         <SectionLabel>FIT CHECK</SectionLabel>
         <h2 className="font-sora text-3xl md:text-5xl mb-4">Who Hikima is best for</h2>
         <p className="text-text-2 max-w-3xl mb-10">
-          A quick filter so we only start conversations where we can create clear ROI and clean execution.
+          A quick fit check so we only work with practices where content can drive measurable growth.
         </p>
 
         <StaggerContainer className="grid md:grid-cols-2 gap-6">
