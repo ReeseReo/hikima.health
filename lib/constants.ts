@@ -15,9 +15,8 @@ export const TIERS = [
     featured: false,
     stripeEnvKey: 'NEXT_PUBLIC_STRIPE_STARTER_URL',
     items: [
-      '2 blog posts per month',
-      '8 social media captions',
-      '1 email newsletter',
+      '2 topic batches per month',
+      'Each batch: article + 4 social posts + newsletter',
       'Monthly content calendar',
       'Voice & brand setup',
       'Compliance review on every piece',
@@ -31,11 +30,10 @@ export const TIERS = [
     badge: 'Most Popular',
     stripeEnvKey: 'NEXT_PUBLIC_STRIPE_GROWTH_URL',
     items: [
-      '4 blog posts per month',
-      '16 social media captions',
-      '2 email newsletters',
-      '2 branded patient handouts',
-      'Monthly strategy call',
+      '4 topic batches per month',
+      'Each batch: article + 4 social posts + newsletter',
+      '2 batches include patient handouts',
+      'Monthly strategy call (with deliverable)',
       'Welcome email sequence',
       'Compliance review on every piece',
     ],
@@ -47,10 +45,10 @@ export const TIERS = [
     featured: false,
     stripeEnvKey: 'NEXT_PUBLIC_STRIPE_AUTHORITY_URL',
     items: [
-      '6 blog posts per month',
-      '24 social media captions',
-      '4 email newsletters',
-      '4 branded patient handouts',
+      '4 topic batches per month',
+      'Each batch: article + 6 social posts + newsletter + handout',
+      'Video scripts & image prompts included',
+      'Posting cadence schedule per batch',
       '2 strategy calls per month',
       'Quarterly content audit',
       'Priority turnaround',
@@ -62,14 +60,18 @@ export const TIERS = [
 export const ADDONS = [
   { price: '$397', name: 'Content Audit', desc: 'Full audit of your existing content with gap analysis and action plan. One-time.' },
   { price: '$147/mo', name: 'WordPress Publishing', desc: 'We publish directly to your WordPress site — SEO-optimized, formatted, scheduled.' },
-  { price: '$200/ea', name: 'Additional Blog Post', desc: 'Extra blog posts beyond your tier allocation. Same quality, same process.' },
+  { price: '$250/ea', name: 'Additional Topic Batch', desc: 'A full content set — article, social posts, newsletter — beyond your monthly allocation.' },
   { price: '$75/ea', name: 'Additional Handout', desc: 'Extra branded patient handouts for your practice or client education.' },
 ] as const;
 
 export const FAQS = [
   {
+    q: 'What is a "topic batch"?',
+    a: "Every month, we research topics that matter to your patients. For each topic, we create a complete content set — a blog article, social posts, a newsletter, and more depending on your plan. Everything is built from one research brief, so your content is cohesive across channels.",
+  },
+  {
     q: 'Can I see samples before signing up?',
-    a: "Yes — visit DietDiscipline.com. Every piece of content on that site is produced by the same team and process that would serve your practice. That's your live portfolio.",
+    a: "Yes — visit DietDiscipline.com. Every piece of content on that site is produced by the same team and process that would serve your practice. We can also create a mini content pack in your specialty so you can see the quality firsthand.",
   },
   {
     q: "What if I don't like the content?",
@@ -88,12 +90,12 @@ export const FAQS = [
     a: "During onboarding, you complete a voice profile questionnaire — your tone, vocabulary preferences, and communication style. Every piece is written to match your specific voice, not a generic template.",
   },
   {
-    q: 'Do you need patient data or PHI to work with us?',
-    a: 'No. Hikima does not require protected health information (PHI) to deliver content services. Please do not send PHI by email. If a workflow ever requires PHI, we define a HIPAA-compliant process and required agreements before use.',
+    q: 'What happens on strategy calls?',
+    a: "Strategy calls are working sessions, not check-ins. We review what content performed, plan next month's topics, and adjust your voice or messaging as needed. You receive an updated content calendar within 24 hours of every call.",
   },
   {
-    q: 'What platforms do you support?',
-    a: 'Blog content formatted for WordPress or any CMS. Social captions for Instagram, Facebook, and LinkedIn. Email templates for Mailchimp and ConvertKit. Patient handouts as branded PDFs.',
+    q: 'Do you need patient data or PHI to work with us?',
+    a: 'No. Hikima does not require protected health information (PHI) to deliver content services. Please do not send PHI by email. If a workflow ever requires PHI, we define a HIPAA-compliant process and required agreements before use.',
   },
 ] as const;
 

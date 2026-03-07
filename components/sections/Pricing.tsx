@@ -42,7 +42,7 @@ export function Pricing() {
       <div className="max-w-[1280px] mx-auto">
         <SectionLabel color="text-accent">PRICING</SectionLabel>
         <h2 className="font-sora text-3xl md:text-5xl mb-4">Plans that scale with your practice</h2>
-        <p className="text-text-2 mb-[52px] max-w-3xl">Every plan includes voice & brand setup, a monthly content calendar, and compliance review on every piece. No contracts — month to month.</p>
+        <p className="text-text-2 mb-[52px] max-w-3xl">Every plan is built around topic batches — complete content sets from a single research brief. Voice & brand setup, content calendar, and compliance review included on every plan. No contracts — month to month.</p>
         <div className="[perspective:1000px]"><StaggerContainer className="grid xl:grid-cols-3 gap-6">{TIERS.map((tier) => <TierCard key={tier.name} tier={tier} />)}</StaggerContainer></div>
       </div>
     </section>
