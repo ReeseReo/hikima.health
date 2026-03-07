@@ -51,6 +51,7 @@ export const TIERS = [
       'Posting cadence schedule per batch',
       '2 strategy calls per month',
       'Quarterly content audit',
+      'WordPress publishing included',
       'Priority turnaround',
       'Compliance review on every piece',
     ],
@@ -59,7 +60,7 @@ export const TIERS = [
 
 export const ADDONS = [
   { price: '$397', name: 'Content Audit', desc: 'Full audit of your existing content with gap analysis and action plan. One-time.' },
-  { price: '$147/mo', name: 'WordPress Publishing', desc: 'We publish directly to your WordPress site — SEO-optimized, formatted, scheduled.' },
+  { price: '$75/mo', name: 'WordPress Publishing', desc: 'We publish directly to your WordPress site — formatted, SEO-optimized, and live. Free with Authority.' },
   { price: '$250/ea', name: 'Additional Topic Batch', desc: 'A full content set — article, social posts, newsletter — beyond your monthly allocation.' },
   { price: '$75/ea', name: 'Additional Handout', desc: 'Extra branded patient handouts for your practice or client education.' },
 ] as const;
@@ -92,6 +93,10 @@ export const FAQS = [
   {
     q: 'What happens on strategy calls?',
     a: "Strategy calls are working sessions, not check-ins. We review what content performed, plan next month's topics, and adjust your voice or messaging as needed. You receive an updated content calendar within 24 hours of every call.",
+  },
+  {
+    q: 'Can you publish directly to my website?',
+    a: "Yes — for $75/month we publish approved content straight to your WordPress site. Formatted, SEO-optimized, and live. You just approve the draft; we handle the rest. Authority plan clients get WordPress publishing included free.",
   },
   {
     q: 'Do you need patient data or PHI to work with us?',
