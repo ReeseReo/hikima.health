@@ -3,6 +3,7 @@ import { Sora, Plus_Jakarta_Sans, Space_Mono } from 'next/font/google';
 import './globals.css';
 import { NoiseOverlay } from '@/components/ui/NoiseOverlay';
 import { ScrollProgress } from '@/components/ui/ScrollProgress';
+import { Analytics } from '@vercel/analytics/react';
 
 const sora = Sora({
   subsets: ['latin'],
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollProgress />
         {children}
         <NoiseOverlay />
+        <Analytics />
       </body>
     </html>
   );
