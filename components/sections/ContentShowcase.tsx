@@ -6,7 +6,7 @@ import { StaggerContainer, fadeUp } from '@/components/ui/StaggerContainer';
 
 export function ContentShowcase() {
   const items = [
-    { title: 'Blog Article', detail: 'Evidence-based, SEO-ready article in your brand voice — formatted for your website and ready to publish.' },
+    { title: 'Blog Article', detail: 'Citation-verified, SEO-ready article in your brand voice — every claim traced to its source. Formatted for your website and ready to publish.' },
     { title: 'Patient Handout', detail: 'Print-ready summary with action steps your patients take home. Branded to your practice.' },
     { title: 'Email Newsletter', detail: 'Nurture-style email that keeps patients engaged and drives bookings — formatted for Mailchimp, ConvertKit, or your platform.' },
     { title: 'Social Posts', detail: 'Platform-ready captions and carousels — all built from the same topic for consistent messaging across channels.' },

@@ -51,7 +51,7 @@ export const TIERS = [
       'Posting cadence schedule per batch',
       '2 strategy calls per month',
       'Quarterly content audit',
-      'WordPress publishing included',
+      'WordPress publishing (coming soon)',
       'Priority turnaround',
       'Compliance review on every piece',
     ],
@@ -60,7 +60,7 @@ export const TIERS = [
 
 export const ADDONS = [
   { price: '$397', name: 'Content Audit', desc: 'Full audit of your existing content with gap analysis and action plan. One-time.' },
-  { price: '$75/mo', name: 'WordPress Publishing', desc: 'We publish directly to your WordPress site — formatted, SEO-optimized, and live. Free with Authority.' },
+  { price: '$75/mo', name: 'WordPress Publishing (Coming Soon)', desc: 'Automated publishing to your WordPress site — formatted, SEO-optimized, and live. Free with Authority when available.' },
   { price: '$250/ea', name: 'Additional Topic Batch', desc: 'A full content set — article, social posts, newsletter — beyond your monthly allocation.' },
   { price: '$75/ea', name: 'Additional Handout', desc: 'Extra branded patient handouts for your practice or client education.' },
 ] as const;
@@ -76,7 +76,7 @@ export const FAQS = [
   },
   {
     q: 'Which plan is right for me?',
-    a: "If you're just getting started with content or want to test the waters, Starter covers the essentials — blog + social + email, twice a month. Growth is for practices ready to show up consistently and start building authority with more content and patient handouts. Authority is for practices that want a full content engine — maximum output, strategy calls, publishing handled for you, and priority turnaround.",
+    a: "If you're just getting started with content or want to test the waters, Starter covers the essentials — blog + social + email, twice a month. Growth is for practices ready to show up consistently and start building authority with more content and patient handouts. Authority is for practices that want a full content engine — maximum output, strategy calls, video scripts, and priority turnaround.",
   },
   {
     q: 'Can I see samples before signing up?',
@@ -92,7 +92,7 @@ export const FAQS = [
   },
   {
     q: 'How do you make sure content is compliant?',
-    a: 'Every piece is reviewed for medical claims, absolutist language, and scope-of-practice boundaries before delivery. We educate — we never diagnose, treat, or prescribe.',
+    a: 'Every piece goes through multiple quality checks — including compliance review for medical claims, absolutist language, and scope-of-practice boundaries. All citations are verified against source material before delivery. We educate — we never diagnose, treat, or prescribe.',
   },
   {
     q: 'Will the content sound like me?',
@@ -104,7 +104,7 @@ export const FAQS = [
   },
   {
     q: 'Can you publish directly to my website?',
-    a: "Yes — for $75/month we publish approved content straight to your WordPress site. Formatted, SEO-optimized, and live. You just approve the draft; we handle the rest. Authority plan clients get WordPress publishing included free.",
+    a: "We're building automated WordPress publishing — it's coming soon. When available, we'll publish approved content straight to your WordPress site, formatted and SEO-optimized. Authority plan clients will get it included free; other plans can add it for $75/month. In the meantime, we deliver publication-ready files you can upload in minutes.",
   },
   {
     q: 'Do you need patient data or PHI to work with us?',
@@ -132,7 +132,7 @@ export const STEPS = [
   {
     num: '01',
     title: 'Pick a plan & share your brand',
-    body: 'Choose your tier and complete a short questionnaire about your practice voice, audience, and brand assets (logo, colors, fonts). Takes about 15 minutes.',
+    body: 'Choose your tier and complete an 11-question voice profile about your practice tone, audience, and brand assets. Takes about 5 minutes.',
     time: 'Day 0 — Sign up',
   },
   {
@@ -150,8 +150,8 @@ export const STEPS = [
 ] as const;
 
 export const PROOF_STATS = [
-  { value: 'Weekly', label: 'Content published', color: 'cyan' as const },
-  { value: '1', label: 'Research brief per batch', color: 'violet' as const },
-  { value: '0', label: 'Medical claims', color: 'violet' as const },
-  { value: '100%', label: 'Actionable content', color: 'cyan' as const },
+  { value: '5', label: 'Quality checks per piece', color: 'cyan' as const },
+  { value: '100%', label: 'Citation-verified', color: 'violet' as const },
+  { value: '0', label: 'Medical claims published', color: 'violet' as const },
+  { value: 'Wed', label: 'Weekly delivery day', color: 'cyan' as const },
 ] as const;
