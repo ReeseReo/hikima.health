@@ -27,7 +27,7 @@ export function Proof() {
           <h2 className="font-sora text-3xl md:text-5xl mb-4">Don&apos;t take our word for it. See the content we produce every week.</h2>
           <p className="text-text-2 mb-4">Most agencies show you a portfolio PDF. We show you a live website. DietDiscipline.com is built entirely on Hikima content — the same quality, structure, and compliance standards your practice would receive.</p>
           <p className="text-text-2 mb-7">Every blog post, every social caption, every handout — produced by the same team and process that would serve your practice.</p>
-          <a href="https://dietdiscipline.com" target="_blank" rel="noopener" className="inline-flex rounded-full border border-[var(--violet-border)] bg-[var(--violet-dim)] text-violet px-5 py-2.5 text-sm hover:text-accent hover:bg-[var(--accent-dim)] hover:border-[var(--accent-border)] hover:shadow-[0_0_14px_2px_var(--accent-glow)] transition-all">Visit DietDiscipline.com →</a>
+          <a href="https://dietdiscipline.com/the-dirty-list/" target="_blank" rel="noopener" className="inline-flex rounded-full border border-[var(--violet-border)] bg-[var(--violet-dim)] text-violet px-5 py-2.5 text-sm hover:text-accent hover:bg-[var(--accent-dim)] hover:border-[var(--accent-border)] hover:shadow-[0_0_14px_2px_var(--accent-glow)] transition-all">Visit DietDiscipline.com →</a>
         </motion.div>
         <StaggerContainer className="grid sm:grid-cols-2 gap-4">
           {PROOF_STATS.map((s) => <StatCard key={s.label} {...s} />)}
