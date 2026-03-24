@@ -4,8 +4,22 @@ import { FAQS } from '@/lib/constants';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { StaggerContainer, fadeUp } from '@/components/ui/StaggerContainer';
 export function FAQ() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+
   return (
     <section id="faq" className="py-[88px] px-6 md:px-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1280px] mx-auto">
         <SectionLabel>FREQUENTLY ASKED</SectionLabel>
         <h2 className="font-sora text-3xl md:text-5xl mb-4">Questions before you start</h2>

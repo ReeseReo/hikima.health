@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | Hikima',
   description: 'Terms and conditions for using Hikima content services.',
+  alternates: { canonical: '/terms' },
 };
 
 export default function Terms() {

@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   description:
     'Evidence-based, compliance-reviewed content for health & wellness practitioners. Blog posts, social captions, emails, and patient handouts. Branded to your practice. Delivered every week.',
   metadataBase: new URL('https://hikima.health'),
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Hikima | Content Strategy for Health Practices',
     description:
@@ -38,19 +39,36 @@ export const metadata: Metadata = {
     url: 'https://hikima.health',
     siteName: 'Hikima',
     type: 'website',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Hikima - Content Strategy for Health Practices' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hikima | Content Strategy for Health Practices',
     description:
       'Evidence-based, compliance-reviewed content for health & wellness practitioners.',
+    images: ['/og-image.png'],
   },
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Hikima',
+  url: 'https://hikima.health',
+  email: 'hello@hikima.health',
+  description: 'Content strategy and production for health and wellness practitioners.',
+  areaServed: 'US',
+  serviceType: 'Content Marketing',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sora.variable} ${jakarta.variable} ${spaceMono.variable}`}>
       <body className="font-jakarta antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <ScrollProgress />
         {children}
         <NoiseOverlay />

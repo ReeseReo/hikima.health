@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Hikima',
   description: 'How Hikima collects, uses, and protects your information.',
+  alternates: { canonical: '/privacy' },
 };
 
 export default function Privacy() {
