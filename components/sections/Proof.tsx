@@ -14,18 +14,18 @@ const SAMPLE_ARTICLES = [
     url: 'https://dietdiscipline.com/health-insights/cold-showers-what-they-actually-do-to-your-body/',
   },
   {
-    title: 'Your Frozen Broccoli Is a Whole Food. Your Organic Chips Are Not.',
-    desc: 'Reframes whole foods around processing level, not labels. Uses the NOVA classification system from 200+ published studies.',
-    words: '2,029',
+    title: 'Your Brain Is 60% Fat. Here Is Why That Changes Everything.',
+    desc: 'Reframes dietary fat around brain function and cell biology. Breaks down which fats matter, which to avoid, and why the low-fat era got it wrong.',
+    words: '1,600',
     type: 'Science Framework',
-    url: 'https://dietdiscipline.com/health-insights/whole-foods-spectrum-guide/',
+    url: 'https://dietdiscipline.com/health-insights/your-brain-is-60-percent-fat-heres-why-that-changes-everything/',
   },
   {
-    title: 'Hydration Myths Debunked: What Actually Matters',
-    desc: 'Evidence-based breakdown of 7 common hydration myths with practical, context-based signals instead of rigid rules.',
-    words: '1,300',
+    title: 'Meal Prep Is Not About Tupperware. It Is About Removing Decisions.',
+    desc: 'Practical framework for sustainable meal prep built around decision fatigue, not perfection. Actionable steps for any schedule.',
+    words: '1,400',
     type: 'Practical Guide',
-    url: 'https://dietdiscipline.com/health-insights/hydration-myths-debunked/',
+    url: 'https://dietdiscipline.com/health-insights/meal-prep-is-not-about-tupperware-it-is-about-removing-decisions/',
   },
 ];
 
