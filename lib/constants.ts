@@ -73,8 +73,8 @@ export const PRICING_PERIODS = {
 export const ADDONS = [
   { price: '$297/ea', name: 'Additional Topic Batch', desc: 'A full content set following your declared batch mix, beyond your monthly allocation.' },
   { price: '$397', name: 'Content Audit', desc: 'Full audit of your existing content with gap analysis and action plan. One-time.' },
-  { price: '$75/ea', name: 'Additional Handout', desc: 'Standalone patient handout outside of a topic batch.' },
-  { price: '$75/ea', name: 'Additional Revision Round', desc: 'Extra revision round beyond the 1 included per delivery.' },
+  { price: '$97/mo', name: 'WordPress Publishing', desc: 'We publish approved content straight to your WordPress site, formatted and SEO-optimized. Free with Clinical Authority.' },
+  { price: '$297', name: 'Welcome Email Sequence', desc: 'Branded 4-part welcome sequence for new patients or subscribers. One-time setup. Included with Growth and above.' },
 ] as const;
 
 export const FAQS = [
