@@ -7,6 +7,14 @@ const VOICE_WORDS = [
   'Premium', 'Reassuring', 'Bold', 'Educational', 'Empathetic',
 ];
 
+const BATCH_ITEMS = [
+  { id: 'article', label: 'Blog article', desc: 'SEO-ready, citation-verified, 1000+ words', locked: true },
+  { id: 'social', label: 'Social posts', desc: '8-slide carousel + captions + video scripts' },
+  { id: 'newsletter', label: 'Email newsletter', desc: 'One key takeaway, one CTA, email-optimized' },
+  { id: 'handout', label: 'Patient handout', desc: 'Print-ready, scannable, standalone action steps' },
+  { id: 'video', label: 'Video scripts', desc: '3 short-form scripts (30-90 sec each)' },
+];
+
 export default function VoiceProfile() {
   const [step, setStep] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -22,6 +30,8 @@ export default function VoiceProfile() {
     differentiator: '',
     patientQuestions: '',
     offLimits: '',
+    batchItems: ['article', 'social', 'newsletter'] as string[],
+    batchNotes: '',
   });
 
   const update = (field: string, value: string | string[]) => setForm((f) => ({ ...f, [field]: value }));
@@ -32,6 +42,16 @@ export default function VoiceProfile() {
       update('voiceWords', current.filter((w) => w !== word));
     } else if (current.length < 3) {
       update('voiceWords', [...current, word]);
+    }
+  };
+
+  const toggleBatchItem = (id: string) => {
+    if (id === 'article') return; // locked
+    const current = form.batchItems;
+    if (current.includes(id)) {
+      update('batchItems', current.filter((i) => i !== id));
+    } else {
+      update('batchItems', [...current, id]);
     }
   };
 
@@ -111,6 +131,51 @@ export default function VoiceProfile() {
       ),
       valid: form.brandPromise && form.differentiator && form.patientQuestions,
     },
+    {
+      title: 'Batch mix',
+      fields: (
+        <>
+          <Field label="How would you like each content batch structured?" required hint="Every batch includes at least 1 blog article (your SEO backbone). Choose what else you want in each batch. You can adjust this anytime during a strategy call.">
+            <div className="space-y-2">
+              {BATCH_ITEMS.map((item) => {
+                const selected = form.batchItems.includes(item.id);
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => toggleBatchItem(item.id)}
+                    className={`w-full text-left px-4 py-3 rounded-lg border transition-all ${
+                      selected
+                        ? 'bg-accent/10 border-accent'
+                        : 'bg-transparent border-border hover:border-text-dim'
+                    } ${item.locked ? 'cursor-default' : 'cursor-pointer'}`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <span className={`text-sm font-medium ${selected ? 'text-accent' : 'text-text-muted'}`}>
+                          {item.label}
+                        </span>
+                        {item.locked && <span className="ml-2 text-[10px] text-text-dim bg-surface px-1.5 py-0.5 rounded">Always included</span>}
+                      </div>
+                      <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
+                        selected ? 'bg-accent border-accent' : 'border-border'
+                      }`}>
+                        {selected && <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="text-background"><polyline points="20 6 9 17 4 12"/></svg>}
+                      </div>
+                    </div>
+                    <p className="text-xs text-text-dim mt-1">{item.desc}</p>
+                  </button>
+                );
+              })}
+            </div>
+          </Field>
+          <Field label="Any notes on your batch preferences?" hint="Want extra articles instead of social? Prefer handouts with every batch? Tell us here.">
+            <textarea value={form.batchNotes} onChange={(e) => update('batchNotes', e.target.value)} rows={2} placeholder="I'd rather have 2 articles and skip the newsletter..." className="form-input resize-none" />
+          </Field>
+        </>
+      ),
+      valid: form.batchItems.length >= 2,
+    },
   ];
 
   const currentStep = steps[step];
@@ -139,7 +204,10 @@ export default function VoiceProfile() {
       `Promise: ${form.brandPromise}\n\n` +
       `Differentiator: ${form.differentiator}\n\n` +
       `Patient questions: ${form.patientQuestions}\n\n` +
-      `Off-limits: ${form.offLimits || 'None'}`
+      `Off-limits: ${form.offLimits || 'None'}\n\n` +
+      `--- BATCH MIX ---\n` +
+      `Selected items: ${form.batchItems.join(', ')}\n\n` +
+      `Notes: ${form.batchNotes || 'None'}`
     );
     window.open(`mailto:hello@hikima.health?subject=${subject}&body=${body}`, '_self');
     setSubmitted(true);
