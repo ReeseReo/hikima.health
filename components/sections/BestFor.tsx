@@ -6,9 +6,9 @@ import { StaggerContainer, fadeUp } from '@/components/ui/StaggerContainer';
 
 export function BestFor() {
   const bestFor = [
-    'Private practices that want consistent weekly content without hiring in-house.',
+    'Private practices that want consistent content without hiring in-house.',
     'Clinics that need compliance-safe education content across blog, email, and social.',
-    'Teams that want strategy + execution, not just random post writing.',
+    'Teams that want strategy + execution, not just one-off posts.',
   ];
 
   const notBestFor = [
@@ -23,7 +23,7 @@ export function BestFor() {
         <SectionLabel>FIT CHECK</SectionLabel>
         <h2 className="font-sora text-3xl md:text-5xl mb-4">Who Hikima is best for</h2>
         <p className="text-text-2 max-w-3xl mb-10">
-          A quick fit check so you can see if Hikima is the right match for your practice.
+          We&apos;re selective about who we work with because the relationship works best when there&apos;s real alignment.
         </p>
 
         <StaggerContainer className="grid md:grid-cols-2 gap-6">

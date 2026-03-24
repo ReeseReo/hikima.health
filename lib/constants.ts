@@ -10,7 +10,7 @@ export const SITE = {
 export const TIERS = [
   {
     name: 'Foundation',
-    tagline: 'Establish your content base',
+    tagline: 'Blog + social + email, twice a month',
     price: 497,
     weekly: 124,
     featured: false,
@@ -26,7 +26,7 @@ export const TIERS = [
   },
   {
     name: 'Practice Growth',
-    tagline: 'Scale patient engagement',
+    tagline: '4x the content, plus strategy calls',
     price: 997,
     weekly: 249,
     featured: true,
@@ -45,7 +45,7 @@ export const TIERS = [
   },
   {
     name: 'Clinical Authority',
-    tagline: 'Become the go-to name in your specialty',
+    tagline: 'Full content engine with priority turnaround',
     price: 1697,
     weekly: 424,
     featured: false,
@@ -104,7 +104,7 @@ export const FAQS = [
   },
   {
     q: 'How do you make sure content is compliant?',
-    a: 'Every piece goes through multiple quality checks, including compliance review for medical claims, absolutist language, and scope-of-practice boundaries. All citations are verified against source material before delivery. We educate. We never diagnose, treat, or prescribe.',
+    a: 'Every piece goes through 5 quality checks, including compliance review for medical claims, absolutist language, and scope-of-practice boundaries. All citations are verified against source material before delivery. We educate. We never diagnose, treat, or prescribe.',
   },
   {
     q: 'Will the content sound like me?',
@@ -120,7 +120,7 @@ export const FAQS = [
   },
   {
     q: 'Do you offer discounts for longer commitments?',
-    a: "Yes. Quarterly commitments save 10% per month, and 6-month commitments save 15%. All plans are still cancel-anytime with 14 days notice. No long-term contracts.",
+    a: "Yes. Quarterly commitments save 10% per month, and 6-month commitments save 15%. All plans are still cancel-anytime before your next billing cycle. No long-term contracts.",
   },
   {
     q: 'Can you publish directly to my website?',
@@ -136,7 +136,7 @@ export const PRACTITIONER_TYPES = [
   'Dietitians',
   'Nutritionists',
   'Physical Therapists',
-  'Functional Medicine',
+  'Functional Medicine Practitioners',
   'Wellness Coaches',
   'Naturopaths',
 ] as const;
@@ -172,6 +172,6 @@ export const STEPS = [
 export const PROOF_STATS = [
   { value: '5', label: 'Quality checks per piece', color: 'cyan' as const },
   { value: '100%', label: 'Citation-verified', color: 'violet' as const },
-  { value: '0', label: 'Medical claims published', color: 'violet' as const },
-  { value: 'Wed', label: 'Weekly delivery day', color: 'cyan' as const },
+  { value: '11', label: 'Voice profile questions', color: 'violet' as const },
+  { value: '48h', label: 'Revision turnaround', color: 'cyan' as const },
 ] as const;

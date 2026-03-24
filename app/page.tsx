@@ -20,12 +20,12 @@ export default function Home() {
       <Hero />
       <BuiltFor />
       <TrustBar />
+      <Proof />
       <BestFor />
       <Divider />
       <HowItWorks />
       <ContentShowcase />
       <Divider />
-      <Proof />
       <Pricing />
       <AddOns />
       <Divider />
