@@ -10,6 +10,7 @@ import { Proof } from '@/components/sections/Proof';
 import { Pricing } from '@/components/sections/Pricing';
 import { AddOns } from '@/components/sections/AddOns';
 import { FAQ } from '@/components/sections/FAQ';
+import { LeadCapture } from '@/components/sections/LeadCapture';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 import { Footer } from '@/components/sections/Footer';
 
@@ -28,6 +29,8 @@ export default function Home() {
       <Divider />
       <Pricing />
       <AddOns />
+      <Divider />
+      <LeadCapture />
       <Divider />
       <FAQ />
       <Divider />

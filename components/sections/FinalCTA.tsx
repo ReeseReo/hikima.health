@@ -8,7 +8,7 @@ export function FinalCTA() {
         <p className="max-w-2xl mx-auto text-text-2 mb-8">You&apos;re 7 days from your first delivery. Pick a plan, share your brand, and let Hikima handle the rest.</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button href="#pricing">Choose Your Plan</Button>
-          <Button href="#proof" variant="secondary">See Our Work First →</Button>
+          <Button href="/voice-profile" variant="secondary">Start Your Voice Profile →</Button>
         </div>
       </div>
     </section>
