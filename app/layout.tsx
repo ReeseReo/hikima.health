@@ -27,12 +27,12 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hikima — Content Strategy for Health Practices',
+  title: 'Hikima | Content Strategy for Health Practices',
   description:
-    'Evidence-based, compliance-reviewed content for health & wellness practitioners. Blog posts, social captions, emails, and patient handouts — branded to your practice. Delivered every week.',
+    'Evidence-based, compliance-reviewed content for health & wellness practitioners. Blog posts, social captions, emails, and patient handouts, branded to your practice. Delivered every week.',
   metadataBase: new URL('https://hikima.health'),
   openGraph: {
-    title: 'Hikima — Content Strategy for Health Practices',
+    title: 'Hikima | Content Strategy for Health Practices',
     description:
       'Evidence-based, compliance-reviewed content for health & wellness practitioners. Delivered every week.',
     url: 'https://hikima.health',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hikima — Content Strategy for Health Practices',
+    title: 'Hikima | Content Strategy for Health Practices',
     description:
       'Evidence-based, compliance-reviewed content for health & wellness practitioners.',
   },

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Hikima',
+  title: 'Privacy Policy | Hikima',
   description: 'How Hikima collects, uses, and protects your information.',
 };
 
@@ -49,8 +49,8 @@ export default function Privacy() {
           <h2 className="font-sora text-lg font-semibold text-text mb-2">5. Third-party services</h2>
           <p>We use the following third-party services:</p>
           <ul className="list-disc pl-5 space-y-1">
-            <li><strong>Stripe</strong> — payment processing</li>
-            <li><strong>Vercel</strong> — website hosting and analytics</li>
+            <li><strong>Stripe</strong>: payment processing</li>
+            <li><strong>Vercel</strong>: website hosting and analytics</li>
           </ul>
           <p className="mt-2">Each service has its own privacy policy. We do not sell or share your personal information with third parties for marketing purposes.</p>
         </section>

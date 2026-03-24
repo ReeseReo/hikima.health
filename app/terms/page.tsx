@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — Hikima',
+  title: 'Terms of Service | Hikima',
   description: 'Terms and conditions for using Hikima content services.',
 };
 
@@ -50,7 +50,7 @@ export default function Terms() {
 
         <section>
           <h2 className="font-sora text-lg font-semibold text-text mb-2">6. Compliance</h2>
-          <p>All content is reviewed for medical claims, absolutist language, and scope-of-practice boundaries before delivery. Hikima content is educational in nature — we do not diagnose, treat, or prescribe. While we take compliance seriously, the client is ultimately responsible for ensuring published content meets the regulatory requirements of their jurisdiction and profession.</p>
+          <p>All content is reviewed for medical claims, absolutist language, and scope-of-practice boundaries before delivery. Hikima content is educational in nature. We do not diagnose, treat, or prescribe. While we take compliance seriously, the client is ultimately responsible for ensuring published content meets the regulatory requirements of their jurisdiction and profession.</p>
         </section>
 
         <section>
