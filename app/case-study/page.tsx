@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Case Study: Diet Discipline | Hikima',
-  description: 'How Hikima built a full content ecosystem for Diet Discipline: 13 articles, 33 nutrition entries, and automated publishing.',
+  description: 'How Hikima built a full content ecosystem for Diet Discipline: 13 articles, 33 nutrition entries, structured data, and automated publishing.',
   alternates: { canonical: '/case-study' },
 };
 
@@ -40,7 +40,7 @@ const TIMELINE = [
     items: [
       'Custom REST API endpoints for Dirty List and Nutrition Hub publishing',
       'Automated WordPress publishing pipeline',
-      'SEO-optimized meta tags and internal linking structure',
+      'Schema.org JSON-LD structured data on all articles',
       'Image optimization (67% compression, alt text on 105 images)',
       'Content calendar for ongoing monthly production',
     ],
@@ -158,7 +158,7 @@ export default function CaseStudy() {
               <strong className="text-text">Citation verification</strong> against peer-reviewed sources. No claim published without a traceable reference.
             </li>
             <li className="text-text-2 text-sm pl-4 relative before:content-['✓'] before:absolute before:left-0 before:text-accent before:font-bold">
-              <strong className="text-text">SEO optimization:</strong> meta tags, internal linking network, and alt text on all images for search visibility
+              <strong className="text-text">Schema.org structured data</strong> (JSON-LD) on all articles for search engine visibility
             </li>
             <li className="text-text-2 text-sm pl-4 relative before:content-['✓'] before:absolute before:left-0 before:text-accent before:font-bold">
               <strong className="text-text">Image optimization:</strong> 67% file size reduction across 21 hub images, descriptive alt text on all 105 images
