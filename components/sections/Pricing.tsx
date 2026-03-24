@@ -42,7 +42,7 @@ function TierCard({ tier, period }: { tier: (typeof TIERS)[number]; period: Peri
       )}
       {!showOriginal && <p className="font-mono text-sm text-text-dim opacity-0">.</p>}
       <p className={`font-mono text-[38px] font-bold ${tier.featured ? 'text-accent' : 'text-violet'}`}>${discountedPrice}<span className="text-base font-normal text-text-dim">/mo</span></p>
-      <p className="font-mono text-xs text-text-dim mb-5">Month-to-month. Cancel anytime.</p>
+      <p className={`font-mono text-xs mb-5 ${tier.featured ? 'text-accent/60' : 'text-violet/60'}`}>~${Math.round(discountedPrice / 4.3)}/week</p>
       <ul className="space-y-2 mb-6">
         {tier.items.map((item) => <li key={item} className="text-sm text-text-muted pl-4 relative before:content-['→'] before:absolute before:left-0 before:font-mono before:text-xs before:text-violet">{item}</li>)}
       </ul>
@@ -59,7 +59,7 @@ export function Pricing() {
       <div className="max-w-[1280px] mx-auto">
         <SectionLabel color="text-accent">PRICING</SectionLabel>
         <h2 className="font-sora text-3xl md:text-5xl mb-4">Plans that scale with your practice</h2>
-        <p className="text-text-2 mb-10 max-w-3xl">Every plan is built around topic batches: complete content sets from a single research brief. Voice & brand setup, content calendar, and compliance review included on every plan. Customize your batch mix during onboarding. No contracts.</p>
+        <p className="text-text-2 mb-10 max-w-3xl">Every plan is built around topic batches: complete content sets from a single research brief. Customize your batch mix during onboarding. No contracts.</p>
 
         {/* Commitment Toggle */}
         <div className="flex justify-center mb-[52px]">

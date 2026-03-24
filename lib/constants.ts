@@ -71,7 +71,7 @@ export const PRICING_PERIODS = {
 } as const;
 
 export const ADDONS = [
-  { price: '$297/ea', name: 'Additional Topic Batch', desc: 'A full content set following your declared batch mix, beyond your monthly allocation.' },
+  { price: '$297/ea', name: 'Additional Topic Batch', desc: 'A full content set matching your chosen batch format, beyond your monthly allocation.' },
   { price: '$397', name: 'Content Audit', desc: 'Full audit of your existing content with gap analysis and action plan. One-time.' },
   { price: '$97/mo', name: 'WordPress Publishing', desc: 'We publish approved content straight to your WordPress site, formatted and SEO-optimized. Free with Clinical Authority.' },
   { price: '$297', name: 'Welcome Email Sequence', desc: 'Branded 4-part welcome sequence for new patients or subscribers. One-time setup. Included with Growth and above.' },
@@ -112,11 +112,11 @@ export const FAQS = [
   },
   {
     q: 'What happens on strategy calls?',
-    a: "Strategy calls are working sessions, not check-ins. We review what content performed, plan next month's topics, and adjust your voice or messaging as needed. You receive an updated content calendar within 24 hours of every call.",
+    a: "Strategy calls are 30-minute video sessions, not check-ins. We review what content performed, plan next month's topics, and adjust your voice or messaging as needed. You receive an updated content calendar within 24 hours of every call.",
   },
   {
     q: 'Can I customize my batch mix?',
-    a: "Yes. During onboarding, you tell us how you want your batches structured. Need 2 articles instead of social posts? Want a handout instead of a newsletter? We customize the mix to fit your practice. Every batch must include at least 1 article (your SEO backbone), and all swaps are declared at onboarding or during strategy calls.",
+    a: "Yes. During onboarding, you tell us how you want your batches structured. Need 2 articles instead of social posts? Want a handout instead of a newsletter? We customize the mix to fit your practice. Every batch must include at least 1 article (your SEO backbone), and all swaps are set during onboarding or strategy calls.",
   },
   {
     q: 'Do you offer discounts for longer commitments?',
@@ -164,7 +164,7 @@ export const STEPS = [
   {
     num: '03',
     title: 'Content delivered, ready to publish',
-    body: 'Blog posts, social captions, emails, and handouts, all branded to your practice, reviewed for compliance, and formatted for your platforms. Published or handed off, your choice.',
+    body: 'Blog posts, social captions, emails, and handouts. All branded to your practice, reviewed for compliance, and formatted for your platforms. Published or handed off, your choice.',
     time: 'Day 7: First delivery',
   },
 ] as const;

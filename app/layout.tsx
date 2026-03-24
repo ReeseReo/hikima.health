@@ -29,7 +29,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: 'Hikima | Content Strategy for Health Practices',
   description:
-    'Evidence-based, compliance-reviewed content for health & wellness practitioners. Blog posts, social captions, emails, and patient handouts, branded to your practice. Delivered every week.',
+    'Evidence-based, compliance-reviewed content for health & wellness practitioners. Blog posts, social captions, emails, and patient handouts. Branded to your practice. Delivered every week.',
   metadataBase: new URL('https://hikima.health'),
   openGraph: {
     title: 'Hikima | Content Strategy for Health Practices',
